@@ -5,6 +5,28 @@
 팬과 아티스트를 연결해주는 SNS 어플리케이션입니다.
 (Weverse와 유사한 서비스)
 
+<!-- TOC -->
+* [⭐ Ourverse](#-ourverse)
+  * [프로젝트 기능 및 설계](#프로젝트-기능-및-설계)
+      * [회원가입 기능](#회원가입-기능)
+      * [로그인 기능](#로그인-기능)
+      * [그룹 기능](#그룹-기능)
+      * [그룹 검색 기능](#그룹-검색-기능)
+      * [게시판 게시글 작성 기능](#게시판-게시글-작성-기능-)
+      * [게시글 목록 조회 기능](#게시글-목록-조회-기능-)
+      * [특정 게시글 조회 기능](#특정-게시글-조회-기능)
+      * [댓글 목록 조회 기능](#댓글-목록-조회-기능)
+      * [좋아요 기능](#좋아요-기능)
+      * [댓글 작성 기능](#댓글-작성-기능)
+      * [신고 기능](#신고-기능)
+      * [신고 목록 조회 기능](#신고-목록-조회-기능)
+      * [어드민 기능](#어드민-기능)
+  * [구현여부](#구현여부)
+  * [ERD](#erd-)
+  * [Trouble Shooting](#trouble-shooting)
+  * [Tech Stack](#tech-stack)
+<!-- TOC -->
+
 ## 프로젝트 기능 및 설계
 
 ---
@@ -74,6 +96,28 @@
 #### 어드민 기능
   - ADMIN 권한을 가진 사용자는 등록된 모든 기능들에 대해 CRUD를 진행할 수 있다.
 
+## 구현여부
+
+---
+
+| 기능            | 구분 | 구현여부 |
+|---------------|----|------|
+| 회원가입 기능       | 필수 |      |
+| 로그인 기능        | 필수 |      |
+| 그룹 기능         | 필수 |      |
+| 그룹 검색 기능      | 필수 |      |
+| 게시판 게시글 작성 기능 | 필수 |      |
+| 게시글 목록 조회 기능  | 필수 |      |
+| 특정 게시글 조회 기능  | 필수 |      |
+| 댓글 목록 조회 기능   | 필수 |      |
+| 좋아요 기능        | 필수 |      |
+| 신고 기능         | 보조 |      | 
+| 신고 목록 조회 기능   | 보조 |      |
+| 어드민 기능        | 보조 |      |
+
+
+
+
 ## ERD 
 
 ---
@@ -90,15 +134,16 @@
 
 ---
 
-<div align=center> 
-  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-  <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+<div style="text-align: center"> 
+  <img alt="java" src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+  <img alt="spring" src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+  <img alt="spring security" src="https://img.shields.io/badge/spring security-6DB33F?style=for-the-badge&logo=spring security&logoColor=white">
   <div></div>
-  <img src="https://img.shields.io/badge/spring security-6DB33F?style=for-the-badge&logo=spring security&logoColor=white">
-  <img src="https://img.shields.io/badge/elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
-  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
+  <img alt="elastic search" src="https://img.shields.io/badge/elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
+  <img alt="redis" src="https://img.shields.io/badge/redis-ff4438?style=for-the-badge&logo=redis&logoColor=white">
+  <img alt="mysql" src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
   <div></div>
-  <img src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white">
-  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+  <img alt="junit5" src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white">
+  <img alt="git" src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img alt="notion" src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 </div>
