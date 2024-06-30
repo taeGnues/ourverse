@@ -54,4 +54,18 @@ public class AuthService {
         }
     }
 
+    public User authentication(Auth.SignIn form) {
+
+        // 1. user 찾기
+        User user = userRepository.findByUsername(form.getUsername()).orElseThrow(
+                () -> new BaseException(ExceptionCode.NOT_EXISTS_USERNAME)
+        );
+
+        // 2. 해당 user의 password와 맞는지 확인하기.
+        if(!passwordEncoder.matches(form.getPassword(), user.getPassword())){
+            throw new BaseException(ExceptionCode.WRONG_SOMETHING);
+        }
+
+        return user;
+    }
 }
