@@ -35,7 +35,7 @@ public class AuthController {
         var user = authService.authentication(form);
 
         // 2. token 발급하기.
-        var token = jwtTokenProvider.generateToken(user.getUsername(), user.getRole());
+        var token = jwtTokenProvider.generateToken(user.getUsername(), user.getRole(), user.getId());
 
         return ResponseEntity.ok(token);
     }
